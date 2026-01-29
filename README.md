@@ -34,7 +34,7 @@ Simulado Geral 29/01/2026
 
 - 15 - Por que o Hibernate no JPA ja cuida dessa parte, permitindo que o desenvolvedor consiga focar nas regras de negocio em vez de se preocupar com a escrita de uma querie.
 
-- 16 - DTO (Data Transfer Object) é um molde da nossa entidade do banco de dados, usado quando não queremos expor dados sensiveis da nossa entidade diretamente no Controller, por exemplo, uma entidade usuario possui nome, email e senha. a senha é um dado sensivel que não queremos retornar em uma resposta GET, por isso criamos um DTO para entidade usuario que possua apenas nome e email. esse DTO pode ser retornado no lugar da entidade diretamente. exibindo apenas o nome e senha.
+- 16 - DTO (Data Transfer Object) é um molde da nossa entidade do banco de dados, usado quando não queremos expor dados sensiveis da nossa entidade diretamente no Controller, por exemplo, uma entidade usuario possui nome, email e senha. a senha é um dado sensivel que não queremos retornar em uma resposta GET, por isso criamos um DTO para entidade usuario que possua apenas nome e email. esse DTO pode ser retornado no lugar da entidade diretamente. exibindo apenas o nome e email.
 
 - 17 - Essa Abordagem utiliza uma instancia do Repository diretamente no Controller para salvar os dados no banco, oque é uma prática incorreta, ja que o Service é responsavel por utilizar as operações do Repository impondo as regras de negócio antes das operações, a ordem certa é Controller -> Service -> Repository, o controller não deve chamar o Repository diretamente.
 
